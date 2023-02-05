@@ -1,0 +1,53 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 960px; /* 横幅800px */
+  display: flex; /* Flexboxの利用 */
+  flex-flow:column;
+  justify-content: center; /* 要素の横並び・中央寄せ */
+  margin: 0 auto; /* 要素の中央揃え */
+  padding: 50px 0; /* 上下に70px、左右に0pxの内側余白 */
+}
+.list{
+  width:100%;
+  margin-bottom:50px;
+
+}
+.list-item{
+  padding: 20px;
+}
+
+.list-item:nth-child(odd){
+  background-color: #dedede;
+}
+.boxes{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-item{
+  width:30%;
+  height: 200px;
+  background-color: yellow;
+  margin-right:5%;
+  margin-bottom: 40px;
+}
+.box-item:nth-child(4n-3){
+  background-color: orange;
+}
+.box-item:nth-child(3n){
+  margin-right: 0;
+}
+.box-item:nth-child(n+6){
+  margin-bottom: 0;
+}
