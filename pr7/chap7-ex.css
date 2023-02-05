@@ -1,0 +1,75 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  height:400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  background-image: url(../chap7ex-img/mv.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position:bottom center; /* 背景画像を中央に配置 */
+}
+
+header .heading {
+  /* headerタグ内のheadingクラスにのみ反映される */
+  font-size: 32px;
+  padding: 20px
+}
+
+main {
+  width: 840px; /* 横幅800px */
+  display: flex; /* Flexboxの利用 */
+  margin: 0 auto; /* 要素の中央揃え */
+  padding: 0 0 10px 0; /* 下に70px、左右に0pxの内側余白 */
+}
+
+.blog {
+  width: 840px;
+}
+.blog-box{
+  width:840px;
+  padding-top:50px;
+}
+.blog-text {
+  padding: 15px 0 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.blog-text-heading {
+  text-align: left;
+}
+.blog-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content:flex-start;
+  flex-flow:column;
+}
+.logo{
+  height: auto;
+  width: 180px;
+}
+
+.blog-date{
+  font-size: 12px;
+  display: inline-block;
+}
+
+.blog {
+  width: 600px; /* 横幅600px */
+  height: auto; /* 高さ1400px */
+}
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
